@@ -1,44 +1,55 @@
 boards:
-  - name: Технологии
+  - name: Technology
     slug: tech
     is_visible: true
     is_private: false
     curator:
-      name: Технологии
-      title: Главные новости
+      name: Internet, VC & Startups
+      title: News, blogs
       avatar: https://i.vas3k.ru/fhr.png
-      bio: Подборка основных изданий о технологиях на русском и английском языках
+      bio: Everything you need to know about VC and startup-craft: news, resources, skills, gems (English, Russian)
       footer: >
-        это общая подборка популярных технологических СМИ.
-        Она сделана по итогам опроса в моём телеграм-канале.
-        Жирным выделяются свежие статьи.
-        Страница обновляется раз в час.
+        Mostly VC and startups media.
+        Latest articles in bold.
+        The pages updates every hour.
     blocks:
-      - name: На русском
+      - name: Russian
         slug: ru
         feeds:
-          - name: vc.ru
+          - name: VC.ru
             url: https://vc.ru
             rss: https://vc.ru/rss/all
             is_parsable: false
-          - name: TJ
-            url: https://tjournal.ru
-            rss: https://tjournal.ru/rss/all
+          - name: Rusbase
+            url: https://rb.ru
+            rss: https://rb.ru/feeds/all/
+          - name: Cossa.ru
+            url: https://www.cossa.ru/all/
+            rss: https://www.cossa.ru/rss/
+          - name: DTF.ru
+            url: https://www.dtf.ru/
+            rss: https://www.dtf.ru/rss/all
+          - name: ITpravda
+            url: https://www.itpravda.com/
+            rss: https://www.itpravda.com/feed/
           - name: "Хабр: лучшее за сутки"
             icon: https://i.vas3k.ru/fhv.png
             url: https://habr.ru
             rss: https://habr.com/ru/rss/best/daily/?fl=ru
-          - name: Rusbase
-            url: https://rb.ru
-            rss: https://rb.ru/feeds/all/
+          - name: Spark: Startups
+            url: https://spark.ru
+            rss: https://spark.ru/startups/rss
           - name: iXBT
             url: https://www.ixbt.com
             rss: http://www.ixbt.com/export/news.rss
             icon: https://i.vas3k.ru/fkm.jpg
-          - name: OpenNet
-            url: https://www.opennet.ru/
-            rss: https://www.opennet.ru/opennews/opennews_6.rss
-      - name: На английском
+          - name: Xakep
+            url: https://xakep.ru/
+            rss: https://xakep.ru/feed
+          - name: "Roem.ru"
+            url: https://roem.ru/
+            rss: https://roem.ru/rss/roem-all-news.xml
+      - name: English
         slug: en
         feeds:
           - name: Hacker News
@@ -48,46 +59,135 @@ boards:
             rss: http://feeds.feedburner.com/TechCrunch/
             url: https://techcrunch.com
             is_parsable: false
-          - name: ArsTechnica
-            rss: http://feeds.arstechnica.com/arstechnica/index/
-            url: https://arstechnica.com
-          - name: Engadget
-            rss: https://www.engadget.com/rss.xml
-            url: https://www.engadget.com
-          - name: Gizmodo
-            url: https://gizmodo.com
-            rss: https://gizmodo.com/rss
-          - name: Wired
-            url: https://www.wired.com
-            rss: https://www.wired.com/feed/rss
-            icon: https://i.vas3k.ru/feu.png
-          - name: Mashable
-            url: https://mashable.com/
-            rss: http://feeds.mashable.com/Mashable
-          - name: The Verge
-            rss: https://www.theverge.com/rss/index.xml
-            url: https://www.theverge.com
+          - name: "Product Hunt"
+            icon: https://i.vas3k.ru/fep.png
+            url: https://www.producthunt.com/
+            rss: https://www.producthunt.com/feed
+          - name: Sifted
+            url: https://sifted.eu/
+            rss: https://sifted.eu/feed/?post_type=article
+          - name: Hacker Noon
+            url: https://hackernoon.com/
+            rss: https://hackernoon.com/feed
+          - name: 'Reddit: /r/SideProject'
+            url: https://www.reddit.com/r/SideProject/
+            rss: https://www.reddit.com/r/SideProject.rss
+            is_parsable: false
+          - name: Betalist
+            url: https://www.betalist.com
+            rss: https://betalist.tumblr.com/rss
           - name: VentureBeat
             url: https://venturebeat.com
-            rss: http://feeds.feedburner.com/venturebeat/SZYF
-          - name: ZDNet
-            rss: https://www.zdnet.com/news/rss.xml
-            url: https://www.zdnet.com
-          - name: CNET
-            url: https://www.cnet.com/topics/tech-industry/
-            rss: http://feed.cnet.com/feed/topics/tech-industry
-          - name: The Next Web
-            rss: http://feeds2.feedburner.com/thenextweb
-            url: https://thenextweb.com
-          - name: ReadWrite
-            url: https://readwrite.com
-            rss: https://readwrite.com/feed/
-          - name: 9to5mac
-            url: https://9to5mac.com
-            rss: https://9to5mac.com/feed/
-      - name: Мейнстрим
-        slug: mainstream
-        feeds:
+            rss: http://feeds.feedburner.com/venturebeat/SZYF         
+          - name: Starter Story
+            url: https://www.starterstory.com
+            rss: https://www.starterstory.com/feed?format=rss
+          - name: Paul Graham Blog
+            url: http://www.paulgraham.com
+            rss: www.aaronsw.com/2002/feeds/pgessays.rss
+          - name: "EU-startups"
+            url: https://www.eu-startups.com/
+            rss: https://www.eu-startups.com/feed/
+            icon: https://i.vas3k.ru/fkp.jpg
+          - name: Tech.eu
+            url: https://tech.eu/
+            rss: https://tech.eu/feed/
+            icon: https://i.vas3k.ru/fl9.jpg
+          - name: "TechCrunch: Europe"
+            url: https://techcrunch.com/europe/
+            rss: http://feeds.feedburner.com/Techcrunch/europe
+            is_parsable: false
+       - name: Telegram Channels
+        slug: ru
+        feeds:       
+          - name: "The Bell Tech"
+            url: https://t.me/Bell_tech
+            rss: https://tg2rss.xyz/channel/?name=Bell_tech
+            is_parsable: false
+          - name: "Темная Сторона"
+            url: https://t.me/temno
+            rss: https://tg2rss.xyz/channel/?name=temno
+            is_parsable: false
+          - name: "Темная Сторона"
+            url: https://t.me/temno
+            rss: https://tg2rss.xyz/channel/?name=temno
+            is_parsable: false
+          - name: "The Edinorog"
+            url: https://t.me/Theedinorogblog
+            rss: https://tg2rss.xyz/channel/?name=Theedinorogblog
+            is_parsable: false
+          - name: "Стартап Дня"
+            url: https://t.me/startupoftheday
+            rss: https://tg2rss.xyz/channel/?name=startupoftheday
+            is_parsable: false
+          - name: "Венчур по Понятиям"
+            url: https://t.me/venturestuff
+            rss: https://tg2rss.xyz/channel/?name=venturestuff
+            is_parsable: false
+          - name: "Секреты Силиконовой Долины"
+            url: https://t.me/beyondfinance
+            rss: https://tg2rss.xyz/channel/?name=beyondfinance
+            is_parsable: false
+          - name: Groks
+            url: https://t.me/groks
+            rss: https://tg2rss.xyz/channel/?name=groks
+            is_parsable: false
+          - name: "Венчур Перестает Быть Томным"
+            url: https://t.me/vecheromventure
+            rss: https://tg2rss.xyz/channel/?name=vecheromventure
+            is_parsable: false
+          - name: Finveritas  
+            url: https://t.me/finveritas
+            rss: https://tg2rss.xyz/channel/?name=finveritas
+            is_parsable: false
+          - name: "Legal Tech News"
+            url: https://t.me/legaltechnews
+            rss: https://tg2rss.xyz/channel/?name=legaltechnews
+            is_parsable: false
+          - name: Uskillz
+            url: https://t.me/uskillz
+            rss: https://tg2rss.xyz/channel/?name=uskillz
+            is_parsable: false
+          - name: Overqualified
+            url: https://t.me/overqualifiedmk
+            rss: https://tg2rss.xyz/channel/?name=overqualifiedmk
+            is_parsable: false
+          - name: "Product Management"
+            url: https://t.me/ruspm
+            rss: https://tg2rss.xyz/channel/?name=ruspm
+            is_parsable: false
+          - name: TechSparks
+            url: https://t.me/techsparks
+            rss: https://tg2rss.xyz/channel/?name=techsparks
+            is_parsable: false
+          - name: "Интернет Поколение"
+            url: https://t.me/internetanalytics
+            rss: https://tg2rss.xyz/channel/?name=internetanalytics
+            is_parsable: false
+          - name: "Айфон Джобса"
+            url: https://t.me/iphonejobs
+            rss: https://tg2rss.xyz/channel/?name=iphonejobs
+            is_parsable: false
+          - name: "Венчурные Мемы"
+            url: https://t.me/venturememes
+            rss: https://tg2rss.xyz/channel/?name=venturememes
+            is_parsable: false
+- name: Technology
+  slug: tech
+  is_visible: true
+  is_private: false
+  curator:
+      name: Mainstream Tech
+      title: Big media news
+      avatar: https://i.vas3k.ru/fhr.png
+      bio: Check this out if you want to see a bigger picture
+      footer: >
+        Latest articles in bold.
+        The pages updates every hour.
+    blocks:
+    - name: Mainstream Tech
+      slug: mainstream
+        feeds:       
           - name: "WSJ: Tech"
             url: https://www.wsj.com/news/technology
             rss: https://feeds.a.dj.com/rss/RSSWSJD.xml
@@ -97,15 +197,58 @@ boards:
           - name: "Reuters Technology"
             url: https://www.reuters.com/news/technology
             rss: http://feeds.reuters.com/reuters/technologyNews
+          - name: Wired
+            url: https://www.wired.com
+            rss: https://www.wired.com/feed/rss
+            icon: https://i.vas3k.ru/feu.png
+          - name: The Next Web
+            rss: http://feeds2.feedburner.com/thenextweb
+            url: https://thenextweb.com
+          - name: The Verge
+            rss: https://www.theverge.com/rss/index.xml
+            url: https://www.theverge.com
+           - name: 'Reddit: /r/technology/'
+            url: https://www.reddit.com/r/technology
+            rss: https://www.reddit.com/r/technology.rss  
+          - name: ArsTechnica
+            rss: http://feeds.arstechnica.com/arstechnica/index/
+            url: https://arstechnica.com
+          - name: Engadget
+            rss: https://www.engadget.com/rss.xml
+            url: https://www.engadget.com
+          - name: Gizmodo
+            url: https://gizmodo.com
+            rss: https://gizmodo.com/rss
+          - name: ZDNet
+            rss: https://www.zdnet.com/news/rss.xml
+            url: https://www.zdnet.com
+          - name: CNET
+            url: https://www.cnet.com/topics/tech-industry/
+            rss: http://feed.cnet.com/feed/topics/tech-industry
+          - name: The Information
+            url: https://www.theinformation.com/
+            rss: https://www.theinformation.com/feed
+          - name: Slashdot
+            rss: http://rss.slashdot.org/Slashdot/slashdotMain
+            url: https://slashdot.org
+          - name: 'Medium: Technology'
+            icon: https://i.vas3k.ru/fhb.png
+            url: https://medium.com/topic/technology
+            rss: https://medium.com/feed/topic/technology
+            is_parsable: false
+          - name: "Becoming Human"
+            url: https://becominghuman.ai/
+            rss: https://becominghuman.ai/feed
 
-  - name: Вастрик
-    slug: vas3k
+
+  - name: Bubble Gum and Culture
+    slug: culturegum
     is_visible: true
     is_private: false
     curator:
-      name: Вастрик
+      name: Bubble Gum and Culture
       url: <a href="https://vas3k.ru">vas3k.ru</a>
-      title: Невсратое айти
+      title: Memes and time killers
       avatar: https://i.vas3k.ru/eb8.png
       bio: Веду блог о технологиях, пишу код, отвратительно путешествую и фотографирую это
       footer: >
@@ -137,59 +280,23 @@ boards:
       - name: Технологии
         slug: tech
         feeds:
-          - name: The Information
-            url: https://www.theinformation.com/
-            rss: https://www.theinformation.com/feed
-          - name: 'Reddit: /r/technology/'
-            url: https://www.reddit.com/r/technology
-            rss: https://www.reddit.com/r/technology.rss
-            is_parsable: false
-          - name: ZDNet
-            rss: https://www.zdnet.com/news/rss.xml
-            url: https://www.zdnet.com
-          - name: TechCrunch
-            rss: http://feeds.feedburner.com/TechCrunch/
-            url: https://techcrunch.com
-            is_parsable: false
-          - name: Slashdot
-            rss: http://rss.slashdot.org/Slashdot/slashdotMain
-            url: https://slashdot.org
-          - name: 'Medium: Technology'
-            icon: https://i.vas3k.ru/fhb.png
-            url: https://medium.com/topic/technology
-            rss: https://medium.com/feed/topic/technology
-            is_parsable: false
-          - name: Hacker Noon
-            url: https://hackernoon.com/
-            rss: https://hackernoon.com/feed
+
+
+
+
+
       - name: Европейское айти
         slug: eu
         feeds:
-          - name: "EU-startups"
-            url: https://www.eu-startups.com/
-            rss: https://www.eu-startups.com/feed/
-            icon: https://i.vas3k.ru/fkp.jpg
-          - name: Tech.eu
-            url: https://tech.eu/
-            rss: https://tech.eu/feed/
-            icon: https://i.vas3k.ru/fl9.jpg
-          - name: "TechCrunch: Europe"
-            url: https://techcrunch.com/europe/
-            rss: http://feeds.feedburner.com/Techcrunch/europe
-            is_parsable: false
+
       - name: Инди-разработка
         slug: make
         feeds:
           - name: Show HN
             url: https://news.ycombinator.com/show
             rss: https://hnrss.org/show
-          - name: Starter Story
-            url: https://www.starterstory.com
-            rss: https://www.starterstory.com/feed?format=rss
-          - name: 'Reddit: /r/SideProject'
-            url: https://www.reddit.com/r/SideProject/
-            rss: https://www.reddit.com/r/SideProject.rss
-            is_parsable: false
+
+
       - name: Путешествия
         slug: travel
         feeds:
@@ -1369,9 +1476,7 @@ boards:
           - name: "Towards Data Science"
             url: https://towardsdatascience.com/
             rss: https://towardsdatascience.com/feed
-          - name: "Becoming Human"
-            url: https://becominghuman.ai/
-            rss: https://becominghuman.ai/feed
+
           - name: "Distill.pub"
             icon: https://i.vas3k.ru/i0r.png
             url: https://distill.pub/
